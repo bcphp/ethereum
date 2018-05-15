@@ -2,6 +2,7 @@
 	"name": "bcphp/ethereum",
 	"type": "library",
 	"description": "Ethereum for PHP: Make JSON-RPC with nodes.",
+	"keywords": ["ethereum", "node", "json-rpc", "rawTx"],
 	"license": "MIT",
 	"homepage": "https://github.com/bcphp/ethereum",
 	"support": {
