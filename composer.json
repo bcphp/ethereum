@@ -22,7 +22,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"BCphp\\Ethereum\\": "src/ethereum/"
+			"BCphp\\Ethereum\\": "src/Ethereum/"
 		}
 	},
 	"minimum-stability": "dev"
