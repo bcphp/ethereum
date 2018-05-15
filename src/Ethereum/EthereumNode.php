@@ -8,9 +8,6 @@ use BCphp\Ethereum\NodeModules\NetModule;
 use BCphp\Ethereum\NodeModules\DbModule;
 use BCphp\Ethereum\NodeModules\ShhModule;
 use BCphp\Ethereum\NodeModules\EthModule;
-use BCphp\Ethereum\Transactions\Transaction;
-
-$pollo = new Transaction();
 
 class EthereumNode
 {
