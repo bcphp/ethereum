@@ -16,6 +16,7 @@
 	],
 	"require": {
 		"php": "^7.0.0",
+		"ext-gmp": "*",
 		"graze/guzzle-jsonrpc": "^3.0",
 		"bitwasp/buffertools": "^0.5",
 		"kornrunner/keccak": "^1.0.2"
