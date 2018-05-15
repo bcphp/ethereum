@@ -68,6 +68,22 @@ Add this line for enable secp256k1 lib:
 extension=secp256k1.so
 ```
 
+4. Install via composer
+
+Add to composer:
+
+```Json
+"require-dev": {
+	"ivan1986/dev-container": "*",
+},
+```
+
+or
+
+```Shell
+composer require bcphp/ethereum
+```
+
 ## JSON-RCP
 
 Connect to an ethereum node through json rpc.
