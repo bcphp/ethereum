@@ -5,8 +5,13 @@ This library provides useful functions to operate an ethereum node.
 ## Requirements
 
 * PHP 7.0+
+* gmp
+* mbstring
 * secp256k1-lastest
 * secp256k1-php-0.1.2
+* autoconf
+* libtool
+* phpize
 
 ## Instalation
 
@@ -44,7 +49,7 @@ Find your extension directory location:
 php -i | grep extension_dir
 ```
 
-Move secp256k1.so to the extension directory location:
+If secp256k1.so dosen't exists, move secp256k1.so to the extension directory location:
 
 ```Shell
 cd secp256k1-php-0.1.2/secp256k1/.libs/
@@ -68,3 +73,5 @@ extension=secp256k1.so
 Connect to an ethereum node through json rpc.
 
 ## SEND RAW TRANSACTIONS
+
+Make raw signed transactions.
