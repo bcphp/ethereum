@@ -21,7 +21,7 @@ class EthereumNode
 	{
 		$this->url = $url;
 		$this->client = RpcClient::factory($this->url);
-		$this->requestId = 0;
+		$this->requestId = 1;
 		$this->modules = [
 			new Web3Module([$this, 'send']),
 			new NetModule([$this, 'send']),

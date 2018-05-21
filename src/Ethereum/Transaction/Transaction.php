@@ -21,12 +21,12 @@ class Transaction
 
 	public function __construct(string $to = null, string $value = null, string $data = null, string $gasPrice = null, string $gasLimit = null, string $nonce = null)
 	{
-		$this->to = Buffer::hex($to ? $to : '');
-		$this->value = Buffer::int($value ? $value : '0');
-		$this->data = new Buffer($data ? $data : '');
-		$this->gasPrice = Buffer::int($gasPrice ? $gasPrice : '3');
-		$this->gasLimit = Buffer::int($gasLimit ? $gasLimit : '196608');
-		$this->nonce = Buffer::int($nonce ? $nonce : '1');
+		$to ? $this->to = Buffer::hex($to) : $this->to = new Buffer();
+		$value ? $this->value = Buffer::int($value) : $this->value = new Buffer();
+		$data ? $this->data = new Buffer($data) : $this->data = new Buffer();
+		$gasPrice ? $this->gasPrice = Buffer::int($gasPrice) : $this->gasPrice = new Buffer();
+		$gasLimit ? $this->gasLimit = Buffer::int($gasLimit) : $this->gasLimit = new Buffer();
+		$nonce ? $this->nonce = Buffer::int($nonce) : $this->nonce = new Buffer();
 	}
 
 	public function sing(string $privateKey, string $chainId)

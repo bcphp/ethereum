@@ -67,7 +67,7 @@ class EthModule extends SendDelegate implements EthModuleInterface
 		if (is_null($blockNumber))
 			$blockNumber = 'latest';
 
-		return $this->send('eth_getTransactionCount');
+		return $this->send('eth_getTransactionCount', [$address, $blockNumber]);
 	}
 
 	public function eth_getBlockTransactionCountByHash(string $blockHash) : Array

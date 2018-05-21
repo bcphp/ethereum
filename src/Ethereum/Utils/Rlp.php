@@ -18,6 +18,9 @@ class Rlp
 			if (strlen($input->getBinary()) == 1 && ord($input->getBinary()) < 0x80)
 				return $input;
 
+			if ($input->getBinary() === Buffer::hex("00")->getBinary())
+				return new Buffer(chr(128));
+
 			return new Buffer(self::encode_length(strlen($input->getBinary()), 0x80) . $input->getBinary());
 		}
 
